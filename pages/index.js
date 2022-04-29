@@ -1,4 +1,16 @@
+import Head from 'next/head'
+import Header from '@components/Header'
+import Footer from '@components/Footer'
+
 <!DOCTYPE html>
+
+export default function Home() {
+  return (
+    <div className="container">
+      <Head>
+        <title>Next.js Starter!</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
 <html>
     <head>
@@ -16,6 +28,12 @@
         </script>
     </head>
 
+      <main>
+        <Header title="Welcome to my app!" />
+        <p className="description">
+          Get started by editing <code>pages/index.js</code>
+        </p>
+      </main>
     <body class="blackground">
         <!-- HEADER -->
         <div class="header">
@@ -23,6 +41,10 @@
             <h4 class="font2">This is my very first website. I'm so happy to have you as a part of my programming journey.</h4>
         </div>
 
+      <Footer />
+    </div>
+  )
+}
         <!-- BORDER -->
         <div class="adjust-border left2 border border-size">
             <!-- USERNAME -->
